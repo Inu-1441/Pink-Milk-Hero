@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        transition: all .3s ease;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    .section-hero {
+        padding: 0 9.6rem;
+        background-image: url(./Images/img.jpg);
+        background-size: 50%;
+        height: 100vh;
+        background-position: top right;
+        background-repeat: no-repeat;
+        background-color: #fef4e3;
+    }
+    
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.4rem 0;
+    }
+    
+    .logo {
+        height: 1.8rem;
+        position: unset;
+    }
+    /* Rectangle Copy */
+    
+    .nav-list {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        gap: 3.2rem;
+        align-items: center;
+        color: #000;
+    }
+    
+    .list-link,
+    .list-link:link {
+        font-size: 1.4rem;
+        color: #000;
+    }
+    
+    .list-link:hover {
+        color: #555;
+    }
+    
+    @keyframes bottommove {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 100%;
+        }
+    }
+    
+    .list-link--Block {
+        background: rgba(0, 0, 0, 0.15);
+        padding: 1.2rem;
+    }
+    
+    .list-link--Block:hover {
+        background: rgba(117, 108, 108, 0.15);
+    }
+    
+    .hero {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 9.6rem;
+        align-items: center;
+    }
+    
+    .text-box {
+        padding: 9.6rem 0;
+        margin-top: 4.8rem;
+    }
+    
+    .heading {
+        font-size: 7.2rem;
+        /* width: 30%; */
+        margin-bottom: 2.4rem;
+        font-family: 'Hammersmith One', serif;
+        font-weight: 500;
+        letter-spacing: -1.4px;
+        text-transform: uppercase;
+    }
+    
+    .heading-sub {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        font-weight: 200;
+        margin-bottom: 3.2rem;
+    }
+    
+    .description {
+        font-size: 1.8rem;
+        line-height: 1.8rem;
+        /* width: 30%; */
+        font-weight: 400;
+        margin-bottom: 4.8rem;
+    }
+    
+    .img-box {
+        position: absolute;
+        z-index: -1;
+        right: 0;
+    }
+    
+    .btn,
+    .btn:link {
+        background-color: #000;
+        color: #fff;
+        padding: 1.4rem 4.8rem;
+        font-size: 1.6rem;
+        border-radius: 10px;
+    }
+    
+    .btn:visited {
+        background-color: rgb(40, 40, 40);
+    }
+    
+    .btn:active {
+        background-color: rgb(49, 34, 34);
+    }
+    
+    .btn:hover {
+        /* background: #fff; */
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    a {
+        text-decoration: none;
+    }
+</style>
+
+<body>
+    <section class="section-hero">
+        <header class="header">
+            <div class="logo-box">
+                <img src="./Images/logo.png" alt="" class="logo">
+            </div>
+            <nav class="header-nav">
+                <ul class="nav-list">
+                    <li><a href="#" class="list-link">Services</a></li>
+                    <li><a href="#" class="list-link">Blog</a></li>
+                    <li><a href="#" class="list-link">Pricing</a></li>
+                    <li><a href="#" class="list-link list-link--Block">Shop Now</a> </li>
+                </ul>
+
+            </nav>
+
+        </header>
+        <div class="hero">
+            <div class="text-box">
+                <h1 class="heading">Pink Milk</h1>
+                <h3 class="heading-sub">NATURAL LUXURY BATH AND BODY</h3>
+                <p class="description">Pink Milk natural nuxury, we are an unashamedly feminine bath, body & home range</p>
+                <a href="#" class="btn">Shop Now</a>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+</body>
+
+</html>
